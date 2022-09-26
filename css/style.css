@@ -134,6 +134,9 @@ body, h1, h2, p{
     
 }
 
+
+
+
 /* css para el inicio */
 
 
@@ -166,6 +169,7 @@ body, h1, h2, p{
     font-weight: 300;
     font-size: 3rem;
     text-align: center;
+    font-family: 'Indie Flower', cursive;
 }
 
 @media (max-width:768px ) {
@@ -200,31 +204,35 @@ body, h1, h2, p{
 }
 
 
-/*productos*/
 
+
+
+
+
+
+/*productos*/
 
 .main-productos {
     background-image:url(../fotos/back-general.jpg) ;
 }
-
 .productos-encabezado {
     display: flex;
     flex-direction: column;         /*texto de arriba a abajo, centrado en el medio*/
     background-color: var(--footer);
     padding: 10px;
 }
-
 .productos-encabezado h1 {
-    font-weight: 500;
     font-size: 4rem;
+    font-weight: 500;
     text-align: center;
 }
 .productos-encabezado p {
-    font-weight: 300;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
     text-align: center;
+    font-family: 'Indie Flower', cursive;
+    
 }
-
 .producto-contendor {
     display: flex;
     align-items: center;        /*codigo parra el texto, dulce, salado*/
@@ -232,20 +240,21 @@ body, h1, h2, p{
     width: 100%;
     
 }
-
 .productos-general h1 {
-    text-align: center;
-    font-weight: 500;
     font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
     padding: 10px;
+
 }
 .productos-general p {
+    font-size: 3rem;
+    font-weight: 500;
     text-align: center;
-    font-weight: 300;
-    font-size: 2rem;
     padding: 10px;
-}
+    font-family: 'Indie Flower', cursive;
 
+}
 .productos-grid {
     display: grid;
     grid-template-columns: repeat(3, 0fr);   /*codigo para las imagenes, una al lado de la otra*/
@@ -254,7 +263,6 @@ body, h1, h2, p{
     margin: 0 5px;
     justify-content: center;
 }
-
 .productos-grid img {
     display: flex;
     width: 400px;
@@ -266,53 +274,47 @@ body, h1, h2, p{
 
 
 @media (max-width:768px ) {
-
     .main-productos {
         background-image:url(../fotos/back-general.jpg) ;
     }
-    
     .productos-encabezado {
         align-items: center;
     
     }
-    
     .productos-encabezado h1 {
+        font-size: 3rem;
         font-weight: 600;
-        font-size: 1.9rem;
         margin-bottom: 10px;
     }
     .productos-encabezado p {
-        font-weight: 300;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
+        font-weight: 800;
         text-align: center;
     }
-    
     .productos-general h1 {
-        font-weight: 400;
         font-size: 3rem;
+        font-weight: 400;
     }
     .productos-general p {
+        font-size: 2rem;
+        font-weight: 800;
         text-align: center;
-        font-weight: 200;
-        font-size: 1.5rem;
         text-align: center;
     }
-    
     .productos-grid {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 1rem;
-   
     }
-    
     .productos-grid img {
         border-radius: 10%;
         
     }
-
-
 }
+
+
+
 
 
 /* nosotros */
@@ -331,7 +333,7 @@ body, h1, h2, p{
 }
 
 .contenido-nosotros img {
-    width: auto;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -354,12 +356,43 @@ body, h1, h2, p{
     font-weight: 0;
     font-size: 2rem;
     padding: 10px;
+
 }
  .text-nosotros-final h2 {
     text-align: center;
     font-size: 2.5rem;
     padding: 10px;
  }
+
+
+
+ @media (max-width:768px ) {
+    .contenido-nosotros {
+        grid-template-columns: repeat(1, 1fr); 
+        
+    }
+
+    .prueba {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    
+    .text-nosotros h1 {
+        font-weight: 400;
+        font-size: 3rem;
+    }
+    
+    .text-nosotros p {
+        font-size: 1.7rem;
+    }
+     .text-nosotros-final h2 {
+        font-size: 1.8rem;
+     }
+    
+    
+ }
+
 
 
 
@@ -393,7 +426,10 @@ body, h1, h2, p{
     text-align: center;
     font-weight: 0;
     font-size: 1.7rem;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: 'Indie Flower', cursive;
 }
 
 .general-eventos img {
@@ -430,29 +466,35 @@ body, h1, h2, p{
 .main-contactos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    height: 100%;
 }
-
 
 .form-contenedor{
     background-color: var(--secundario);
     height: 100%;
+
 }
 
 
 .campos-general {
     display: flex; 
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+}
+
+
+.form-contenedor fieldset {
+    border: none;
 }
 
 .campos-general legend h1 {
     font-size: 4rem;
+    padding-top: 30px;
 }
 .campos-general legend p {
     font-size: 2rem;
     border: none;
+    font-family: 'Indie Flower', cursive;
 }
 
 .campos-general label {
@@ -461,7 +503,8 @@ body, h1, h2, p{
     justify-content: center;
     font-size: 3rem;
     margin-top: 10px;
-
+    padding-top: 3rem;
+    font-family: 'Indie Flower', cursive;
 }
 
 .campos-general input {
@@ -475,6 +518,7 @@ body, h1, h2, p{
     border: none;
     height: 80px;
     width: 350px;
+    margin-top: 10px;
 }
 
 
@@ -482,17 +526,62 @@ body, h1, h2, p{
     border: none;
     margin-top: 10px;
     margin-bottom: 20px;
+    cursor: pointer;
 
 }
 
-/*map*/
+.contenedor-map-publi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../fotos/back-general.jpg);
+}
 
 .map {
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: #B68E56;
+    margin: 1rem;
 }
+
+.img-publicidad {
+    margin: 1rem;
+
+}
+
+
+
+@media (max-width:768px ) {
+
+    .main-contactos {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form-contenedor fieldset {
+        border: none;
+    }
+    
+    .campos-general legend h1 {
+        font-size: 3rem;
+    }
+    .campos-general legend p {
+        font-size: 2rem;
+
+    }
+    
+    .campos-general label {
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
+}
+    
+
+
+
 
 
 

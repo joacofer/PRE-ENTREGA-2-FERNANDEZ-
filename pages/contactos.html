@@ -12,13 +12,16 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../fotos/logo/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../fotos/logo/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../fotos/logo/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="preload" href="../css/style.css" as="style">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/6e9a338e94.js" crossorigin="anonymous"></script>
     <script defer src="../js/index.js"></script>
 </head>
 <body>
-
+    
     <header class="header">
         <nav class="nav">
             <a href="../index.html">
@@ -41,50 +44,58 @@
                         <a href="./contactos.html" class="nav-menu-link nav-link">CONTACTOS</a>
                     </li>
                 </ul>
-        </nav>
-    </header>
+            </nav>
+        </header>
+        
+        
 
-
-    <main class="main-contactos">
-        <section>
-            <form class="form-contenedor">
-                <fieldset>
-                <div class="campos-general">
-                        <legend>
-                            <h1>contactos</h1>
-                            <p>Dejanos tus consultas o sugerencias</p>
-                        </legend>
-                    <div class="campos">
-                        <label for="nombreApellido">Nombre y Apellido*</label>
-                        <input type="text" id="nombreApellido" name="nombreApellido" placeholder="Joaquin Fernandez">
+        <main class="main-contactos">
+            <section>
+                <form class="form-contenedor">
+                    <fieldset>
+                        <div class="campos-general">
+                            <legend>
+                                <h1>contactos</h1>
+                                <p>Dejanos tus consultas o sugerencias</p>
+                            </legend>
+                            <div class="campos">
+                                <label for="nombreApellido">Nombre y Apellido*</label>
+                                <input type="text" id="nombreApellido" name="nombreApellido" placeholder="Joaquin Fernandez">
+                            </div>
+                            <div class="campos">
+                                <label for="Email">Email*</label>
+                                <input type="email" id="Email" name="Direccion de correo" placeholder="tunombre@tucorreo.com">
+                            </div>
+                            <div class="campos">
+                                <label for="Celular">Celular*</label>
+                                <input type="tel" id="Celular" name="Telefono" placeholder="+5411567985">
+                            </div>
+                            <div class="campos">
+                                <label for="Mensaje">Mensaje*</label>
+                                <textarea type="text" id="Mensaje" name="Comentario o pregunta" placeholder="Mensaje o sugerencia"></textarea>
+                            </div>
+                            <div class="enviar">
+                                <input type="submit"  value="Enviar">
+                            </div>
                     </div>
-                    <div class="campos">
-                        <label for="Email">Email*</label>
-                        <input type="email" id="Email" name="Direccion de correo" placeholder="tunombre@tucorreo.com">
-                    </div>
-                    <div class="campos">
-                        <label for="Celular">Celular*</label>
-                        <input type="tel" id="Celular" name="Telefono" placeholder="+5411567985">
-                    </div>
-                    <div class="campos">
-                        <label for="Mensaje">Mensaje*</label>
-                        <textarea type="text" id="Mensaje" name="Comentario o pregunta" placeholder="Mensaje o sugerencia"></textarea>
-                    </div>
-                    <div class="enviar">
-                        <input type="submit"  value="Enviar">
-                    </div>
-                </div>
                 </fieldset>
             </form>
         </section>
 
-        <section class="map">
-            <h2>UBICACION DEL LOCAL</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158516.9728510573!2d-69.41183165655659!3d-51.62636530835622!2m3!1f0!2f0!3f0!3m2!1i1024!
-                    2i768!4f13.1!3m3!1m2!1s0xbdb6f952b21c66e5%3A0xab7c41f247647102!2sR%C3%ADo%20Gallegos%2C%20Santa%20Cruz!5e0!3m2!1ses-419!2sar!4v1662504870313!5m2!
-                    1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-    </main>
+
+            <section class="contenedor-map-publi">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158516.9728510573!2d-69.41183165655659!3d-51.62636530835622!2m3!1f0!2f0!3f0!3m2!1i1024!
+                   2i768!4f13.1!3m3!1m2!1s0xbdb6f952b21c66e5%3A0xab7c41f247647102!2sR%C3%ADo%20Gallegos%2C%20Santa%20Cruz!5e0!3m2!1ses-419!2sar!4v1662504870313!5m2!
+                   1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="img-publicidad">
+                    <img src="../fotos/contactos/publi 3.jpg" alt="publicidad">
+                </div>
+            </section>
+
+            
+        </main>
 
 
     <footer>
