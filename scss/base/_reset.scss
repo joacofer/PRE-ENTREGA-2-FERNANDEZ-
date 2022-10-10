@@ -1,0 +1,16 @@
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; }
+    
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body, h1, h2, p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.5rem; /*1rem = 16px*/ }
+

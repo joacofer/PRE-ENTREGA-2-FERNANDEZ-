@@ -1,0 +1,48 @@
+
+.fondo-inicio {
+    background-image: url(../fotos/back-inicio.jpg);
+    background-size: cover;
+    height: 65rem;
+    position: relative; }                        /* para poder hacer el sombreado */
+
+.contenido-inicio {
+    position: absolute;                          /* para poder hacer el sombreado */
+    background-color: rgba(0, 0, 0, .3);       /* para poder hacer el sombreado */
+    @include tamaño (100%,100%);                            
+    display: flex;
+    flex-direction: column;   /*de arriba a abajo*/
+    align-items: center;      /*centrado horizontalmente*/
+    padding-top: 10%; }       /*centrado de arriba abajo*/
+    .contenido-inicio h1 {
+    color: $background-color-blanco;
+    @include fuente-tamaño (300,4rem); }
+    .contenido-inicio  h2 {
+    color: $background-color-blanco;
+    @include fuente-tamaño (300,3rem);
+    text-align: center;
+    font-family: 'Indie Flower', cursive;}
+
+@media (max-width:768px ) {
+
+.fondo-inicio {
+    background-image: url(../fotos/back-inicio.jpg);
+    height: 55rem;
+    position: static;  }    
+
+
+.contenido-inicio {
+    position: static;                          
+    background-color: rgba(0, 0, 0, .3);       
+    @include tamaño (100%,100%);                                
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    padding-top: 10%; }    
+    .contenido-inicio h1 {
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;}
+    .contenido-inicio  h2 {
+    margin-top: 15px;}}
+    
+

@@ -1,0 +1,27 @@
+.bg-propio {
+    background-color: $background-color-pri;}
+
+.img-logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    margin: 0px 40px; }
+
+.nav-item {
+    font-family: 'Secular One', sans-serif;
+    font-size: 2.3rem;
+    color: $background-color-blanco;
+    margin-right: 40px; }
+
+.nav-item:hover {
+    font-size: 2.6rem;
+    transition: 0.7s; }
+
+.custom-toggler.navbar-toggler {
+    border: none;
+    margin-right: 15px; }
+ 
+.navbar-collapse {
+    margin-left: 40px; }
+ 
+

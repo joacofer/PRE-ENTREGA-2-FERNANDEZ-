@@ -1,0 +1,32 @@
+footer {
+    background-color:$background-color-sec;
+    padding: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    position: absolute;
+    width: 100%; }
+
+ 
+.footer-contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px; }
+    .footer-contenedor h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    margin:5px 20px ;}
+    .footer-contenedor ul {
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    list-style: none;
+    padding: 0px;
+    margin: 5px 0px; }
+    .footer-contenedor li {
+    margin: 5px 20px 0px 20px; }
+    .footer-contenedor ul, li, svg, path {
+    color: $background-color-oscuro;}
+    
+
