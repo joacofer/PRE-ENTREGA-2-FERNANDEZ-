@@ -41,7 +41,7 @@ body, h1, h2, p {
 .fondo-inicio {
   background-image: url(../fotos/back-inicio.jpg);
   background-size: cover;
-  height: 65rem;
+  height: 90rem;
   position: relative; }
 
 /* para poder hacer el sombreado */
@@ -75,7 +75,7 @@ body, h1, h2, p {
 @media (max-width: 768px) {
   .fondo-inicio {
     background-image: url(../fotos/back-inicio.jpg);
-    height: 55rem;
+    height: 75rem;
     position: static; }
   .contenido-inicio {
     position: static;
@@ -342,7 +342,8 @@ footer {
   padding: 0px;
   padding-top: 0px;
   margin-top: 0px;
-  position: absolute;
+  position: sticky;
+  bottom: 0;
   width: 100%; }
 
 .footer-contenedor {
